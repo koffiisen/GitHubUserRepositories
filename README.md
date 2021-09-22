@@ -12,11 +12,13 @@ Small python scrapping of github users repository
 *  ```pip install smartjson``` just for convert class to json
 
 ```python 
+from github import GitHubUserRepositories
+from scripts import SmartJson # not neccessary
 
 repo = GitHubUserRepositories("https://github.com/koffiisen")
 all_repo = repo.getList()
 # SmartJson({"repos": all_repo}).serializeToJsonFile()
-print(SmartJson({"repos": all_repo}).serialize())
+print(SmartJson({"repos": all_repo}).serialize()) #not neccessary
 
 ```
 
