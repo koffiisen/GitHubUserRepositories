@@ -16,6 +16,11 @@ from github import GitHubUserRepositories
 from scripts import SmartJson # not neccessary
 
 repo = GitHubUserRepositories("https://github.com/koffiisen")
+
+# or
+# repo = GitHubUserRepositories("https://github.com/koffiisen",next_page_time_interval=2)
+# next_page_time_interval is time interval for scrapping next page
+
 all_repo = repo.getList()
 # SmartJson({"repos": all_repo}).serializeToJsonFile()
 print(SmartJson({"repos": all_repo}).serialize()) #not neccessary
