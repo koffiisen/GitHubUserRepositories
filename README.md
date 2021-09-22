@@ -3,6 +3,9 @@ Small python scrapping of github users repository
 
 # How to uses ?
 * First install packages :
+
+* ```pip install -r requirements.txt```
+* OR install manually
 * requests, beautifulsoup4, smartjson
 *  ```pip install requests```
 *  ```pip install beautifulsoup4```
