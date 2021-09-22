@@ -19,3 +19,5 @@ all_repo = repo.getList()
 print(SmartJson({"repos": all_repo}).serialize())
 
 ```
+
+* OR run ```python test.py```
