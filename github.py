@@ -3,7 +3,6 @@ from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
-from scripts import SmartJson
 
 
 class RepoInterface:
@@ -126,9 +125,3 @@ class GitHubUserRepositories:
         return self.repo_list
 
         # print(soup)
-
-
-"""repo = GitHubUserRepositories("https://github.com/koffiisen")
-all_repo = repo.getList()
-# SmartJson({"repos": all_repo}).serializeToJsonFile()
-print(SmartJson({"repos": all_repo}).serialize())"""
